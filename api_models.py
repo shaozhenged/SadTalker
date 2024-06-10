@@ -16,7 +16,8 @@ class SadTalkerRequest(sd_models.BaseModel):
     )
 
     voice_type: int = Field(title='voice type',
-                            description="voice type")
+                            description="voice type",
+                            default=1009)
 
 
 class SadTalkerResponse(BaseModel):
